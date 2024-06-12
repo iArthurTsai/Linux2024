@@ -1,0 +1,12 @@
+[Unit]
+Description=HFS Service
+After=network.target
+
+[Service]
+ExecStart=/home/arthur/hfs-linux/hfs
+WorkingDirectory=/home/arthur/hfs-linux
+User=root
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
